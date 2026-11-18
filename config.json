@@ -1,0 +1,51 @@
+{
+  "bridge": {
+    "enabled": false
+  },
+  "adapter": {
+    "name": "MyEaglerServer",
+    "bindHost": "0.0.0.0",
+    "bindPort": 10000,
+    "maxConcurrentConnections": 20,
+    "useNatives": true,
+    "skinServer": {
+      "skinUrlWhitelist": {
+        "allowAll": true
+      },
+      "cache": {
+        "useCache": true,
+        "folderName": "skinCache",
+        "skinCacheLifetime": 3600000,
+        "skinCachePruneInterval": 60000
+      }
+    },
+    "motd": {
+      "iconURL": "default.png",
+      "l1": "Сервер 1.12.2 с особняком",
+      "l2": "Добро пожаловать!"
+    },
+    "ratelimits": {
+      "lockout": 10,
+      "limits": {
+        "http": 100,
+        "ws": 100,
+        "motd": 100,
+        "connect": 100,
+        "skins": 100,
+        "skinsIp": 100
+      }
+    },
+    "origins": {
+      "allowOfflineDownloads": true,
+      "originWhitelist": null,
+      "originBlacklist": null
+    },
+    "server": {
+      "host": "WithSavelyiVadimowic.aternos.me",
+      "port": 24406
+    },
+    "tls": {
+      "enabled": false
+    }
+  }
+}
