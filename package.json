@@ -1,0 +1,10 @@
+{
+  "name": "eagler-proxy-render",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx eaglerproxy"
+  },
+  "dependencies": {
+    "eaglerproxy": "latest"
+  }
+}
